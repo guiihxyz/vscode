@@ -39,20 +39,37 @@
             box-shadow: 2px 0 12px 0 #9cdcfe1a;
         }
     </style>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Veja as extensões personalizadas do VSCode usadas por guiihxyz. Fontes otimizadas e produtividade com estilo.">
+    <meta name="keywords" content="VSCode, configurações, settings.json, guiihxyz, theme, Dracula, SynthWave, desenvolvedor, produtividade, JetBrains Mono, Inter, editor de código">
+    <meta name="author" content="guiihxyz">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Configs VSCode - guiihxyz">
+    <meta property="og:description" content="As extensões do VSCode utilizadas por guiihxyz. Ideal para desenvolvedores que buscam performance e estilo.">
+    <meta property="og:image" content="https://guiihxyz.com.br/src/favicon.png">
+    <meta property="og:url" content="https://guiihxyz.com.br/configs">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Configs VSCode - guiihxyz">
+    <meta name="twitter:description" content="As extensões do VSCode utilizadas por guiihxyz. Ideal para devs que curtem performance.">
+    <meta name="twitter:image" content="https://guiihxyz.com.br/src/favicon.png">
 </head>
-<body class="bg-[#111216] text-gray-200 min-h-screen flex flex-col">
+<body class="antialiased bg-[#111216] text-gray-200 min-h-screen flex flex-col">
     <!-- Barra superior -->
     <header class="bg-[#181a20] flex items-center px-6 py-3 border-b border-[#23242b] shadow-lg z-10">
         <span class="text-xs text-[#9cdcfe] bg-[#181a20] px-3 py-1 rounded-full border border-[#23242b] mr-4">VSCode</span>
-        <span class="text-gray-400 text-base">Extensões de <a href="https://github.com/guiihxyz" class="text-[#9cdcfe] hover:underline">guiihxyz</a></span>
+        <span class="text-gray-400 text-base">Extensões <a href="https://github.com/guiihxyz" class="text-[#9cdcfe] hover:underline">guiihxyz</a></span>
     </header>
     <div class="flex flex-1 overflow-hidden">
         <!-- Barra lateral -->
         <aside class="bg-[#181a20] sidebar-glow w-16 flex flex-col items-center py-6 space-y-4 border-r border-[#23242b]">
-            <a href="index.html" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group" title="Explorer">
+            <a href="index" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group" title="Explorer">
                 <i class="fa-solid fa-house text-[#9cdcfe] text-xl group-hover:scale-110 transition"></i>
             </a>
-            <a href="extensoes.html" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group tab-glow" title="Extensões">
+            <a href="extensoes" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group tab-glow" title="Extensões">
                 <i class="fa-solid fa-box text-[#9cdcfe] text-xl group-hover:scale-110 transition"></i>
             </a>
             <a href="https://github.com/guiihxyz" target="_blank" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group" title="GitHub">
@@ -89,6 +106,13 @@
                         <div>
                             <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Auto Rename Tag</a>
                             <div class="text-gray-400 text-sm">Renomeia automaticamente a tag de fechamento ao editar a de abertura.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-brackets-curly text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Bracket Pair Colorizer 2</a>
+                            <div class="text-gray-400 text-sm">Coloriza pares de colchetes para facilitar a leitura do código.</div>
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
@@ -141,13 +165,6 @@
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-solid fa-history text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Git History</a>
-                            <div class="text-gray-400 text-sm">Visualize o histórico do seu repositório Git.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
                         <i class="fa-brands fa-github text-[#9cdcfe] text-2xl"></i>
                         <div>
                             <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">GitHub Copilot</a>
@@ -162,10 +179,59 @@
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-history text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Git History</a>
+                            <div class="text-gray-400 text-sm">Visualize o histórico do seu repositório Git.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-arrow-right-arrow-left text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-goto-view" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel goto view</a>
+                            <div class="text-gray-400 text-sm">Vá direto para a view do controller.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-brands fa-laravel text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=amiralizadeh9480.laravel-extra-intellisense" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Extra Intellisense</a>
+                            <div class="text-gray-400 text-sm">Intellisense avançado para Laravel.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-brands fa-laravel text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-extension-pack" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Extension Pack</a>
+                            <div class="text-gray-400 text-sm">Pacote de extensões essenciais para Laravel.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
                         <i class="fa-brands fa-laravel text-[#9cdcfe] text-2xl"></i>
                         <div>
                             <a href="https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Artisan</a>
                             <div class="text-gray-400 text-sm">Comandos Artisan direto no VSCode.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-plus text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-goto-view" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Create View</a>
+                            <div class="text-gray-400 text-sm">Crie views rapidamente no Laravel.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-arrow-right-to-bracket text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-jump-controller" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">laravel-jump-controller</a>
+                            <div class="text-gray-400 text-sm">Vá direto para o controller do Laravel.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-cube text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=thekordy.laravel-goto-components" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">laravel-goto-components</a>
+                            <div class="text-gray-400 text-sm">Navegação rápida entre componentes Laravel.</div>
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
@@ -190,34 +256,6 @@
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-solid fa-plus text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-goto-view" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Create View</a>
-                            <div class="text-gray-400 text-sm">Crie views rapidamente no Laravel.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-brands fa-laravel text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-extension-pack" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Extension Pack</a>
-                            <div class="text-gray-400 text-sm">Pacote de extensões essenciais para Laravel.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-brands fa-laravel text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=amiralizadeh9480.laravel-extra-intellisense" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Extra Intellisense</a>
-                            <div class="text-gray-400 text-sm">Intellisense avançado para Laravel.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-solid fa-arrow-right-arrow-left text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-goto-view" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel goto view</a>
-                            <div class="text-gray-400 text-sm">Vá direto para a view do controller.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
                         <i class="fa-solid fa-code text-[#9cdcfe] text-2xl"></i>
                         <div>
                             <a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Laravel Snippets</a>
@@ -225,24 +263,17 @@
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-solid fa-cube text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=thekordy.laravel-goto-components" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">laravel-goto-components</a>
-                            <div class="text-gray-400 text-sm">Navegação rápida entre componentes Laravel.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-solid fa-arrow-right-to-bracket text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-jump-controller" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">laravel-jump-controller</a>
-                            <div class="text-gray-400 text-sm">Vá direto para o controller do Laravel.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
                         <i class="fa-solid fa-bolt text-[#9cdcfe] text-2xl"></i>
                         <div>
                             <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Live Server</a>
                             <div class="text-gray-400 text-sm">Servidor local com recarregamento automático.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-solid fa-location-arrow text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Path Intellisense</a>
+                            <div class="text-gray-400 text-sm">Autocompletar caminhos de arquivos.</div>
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
@@ -281,17 +312,17 @@
                         </div>
                     </div>
                     <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
-                        <i class="fa-brands fa-css3-alt text-[#9cdcfe] text-2xl"></i>
-                        <div>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Tailwind CSS IntelliSense</a>
-                            <div class="text-gray-400 text-sm">Autocompletar e dicas para Tailwind CSS.</div>
-                        </div>
-                    </div>
-                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
                         <i class="fa-solid fa-bolt-lightning text-[#9cdcfe] text-2xl"></i>
                         <div>
                             <a href="https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Thunder Client</a>
                             <div class="text-gray-400 text-sm">Cliente REST leve para testar APIs.</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#181a20] border border-[#23242b] rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition">
+                        <i class="fa-brands fa-css3-alt text-[#9cdcfe] text-2xl"></i>
+                        <div>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank" class="code-font text-lg text-[#9cdcfe] hover:underline">Tailwind CSS IntelliSense</a>
+                            <div class="text-gray-400 text-sm">Autocompletar e dicas para Tailwind CSS.</div>
                         </div>
                     </div>
                 </div>
