@@ -87,7 +87,7 @@
                 <!-- Aba do arquivo -->
                 <div class="bg-[#181a20] flex items-center px-6 py-3 border-b border-[#23242b] tab-glow">
                     <i class="fa-solid fa-file-code text-[#9cdcfe] mr-3"></i>
-                    <span class="text-gray-100 font-mono code-font text-base"">guiihxyz.settings.json</span>
+                    <span class="text-gray-100 font-mono code-font text-base">guiihxyz.settings.json</span>
                 </div>
                 <!-- Editor -->
                 <div class="flex-1 bg-[#111216] p-0 overflow-auto">
@@ -104,38 +104,36 @@
         <!-- Monaco Editor -->
         <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
         <script src="https://unpkg.com/monaco-themes/dist/monaco-themes.js"></script>
-    </script>
-    <script>
-        require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs' }})
-        require(['vs/editor/editor.main'], function () {
-            fetch('src/settings.json')
-            .then(res => res.text())
-            .then(jsonText => {
-                fetch('https://unpkg.com/monaco-themes/themes/Dracula.json')
-                .then(res => res.json())
-                .then(data => {
-                    monaco.editor.defineTheme('dracula', data);
-                    monaco.editor.create(document.getElementById('monaco'), {
-                        value: jsonText,
-                        language: 'json',
-                        theme: 'dracula',
-                        fontFamily: 'JetBrains Mono, monospace',
-                        fontSize: 18,
-                        readOnly: true,
-                        minimap: { enabled: false },
-                        lineNumbers: "on",
-                        scrollBeyondLastLine: false,
-                        renderLineHighlight: "all",
-                        roundedSelection: false,
-                        scrollbar: {
-                            vertical: 'auto',
-                            horizontal: 'auto'
-                        }
+        <script>
+            require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs' }})
+            require(['vs/editor/editor.main'], function () {
+                fetch('src/settings.json')
+                .then(res => res.text())
+                .then(jsonText => {
+                    fetch('https://unpkg.com/monaco-themes/themes/Dracula.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        monaco.editor.defineTheme('dracula', data);
+                        monaco.editor.create(document.getElementById('monaco'), {
+                            value: jsonText,
+                            language: 'json',
+                            theme: 'dracula',
+                            fontFamily: 'JetBrains Mono, monospace',
+                            fontSize: 18,
+                            readOnly: true,
+                            minimap: { enabled: false },
+                            lineNumbers: "on",
+                            scrollBeyondLastLine: false,
+                            renderLineHighlight: "all",
+                            roundedSelection: false,
+                            scrollbar: {
+                                vertical: 'auto',
+                                horizontal: 'auto'
+                            }
+                        })
                     })
                 })
             })
-        })
-    </script>
-    </script>
+        </script>
     </body>
-    </html>
+</html>
