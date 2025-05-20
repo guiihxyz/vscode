@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Configs - guiihxyz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Inter & JetBrains Mono Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            font-family: 'Inter', sans-serif;
+            background: #111216;
+        }
+
+        .code-font {
+            font-family: 'JetBrains Mono', monospace !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            background: #181a20;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #23242b;
+            border-radius: 4px;
+        }
+
+        .glow {
+            box-shadow: 0 0 0 2px #9cdcfe, 0 0 12px #9cdcfea0;
+        }
+
+        .tab-glow {
+            box-shadow: 0 2px 0 0 #9cdcfe;
+        }
+
+        .sidebar-glow {
+            box-shadow: 2px 0 12px 0 #9cdcfe1a;
+        }
+    </style>
+</head>
+<body class="bg-[#111216] text-gray-200 min-h-screen flex flex-col">
+    <!-- Barra superior -->
+    <header class="bg-[#181a20] flex items-center px-6 py-3 border-b border-[#23242b] shadow-lg z-10">
+        <span class="text-xs text-[#9cdcfe] bg-[#181a20] px-3 py-1 rounded-full border border-[#23242b] mr-4">VSCode</span>
+        <span class="text-gray-400 text-base">Configurações de <a href="https://github.com/guiihxyz" class="text-[#9cdcfe] hover:underline">guiihxyz</a></span>
+    </header>
+    <div class="flex flex-1 overflow-hidden">
+        <!-- Barra lateral -->
+        <aside class="bg-[#181a20] sidebar-glow w-16 flex flex-col items-center py-6 space-y-4 border-r border-[#23242b]">
+            <a href="/" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group tab-glow" title="Explorer">
+                <i class="fa-solid fa-house text-[#9cdcfe] text-xl group-hover:scale-110 transition"></i>
+            </a>
+            <a href="extensoes.html" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group" title="Extensões">
+                <i class="fa-solid fa-box text-[#9cdcfe] text-xl group-hover:scale-110 transition"></i>
+            </a>
+            <a href="https://github.com/guiihxyz" target="_blank" class="w-11 h-11 flex justify-center items-center hover:bg-[#23242b] rounded-xl transition group" title="GitHub">
+                <i class="fa-brands fa-github text-gray-400 text-xl group-hover:text-[#9cdcfe] transition"></i>
+            </a>
+        </aside>
+        <!-- Área principal -->
+        <main class="flex-1 flex flex-col bg-[#111216]">
+            <!-- Aba do arquivo -->
+            <div class="bg-[#181a20] flex items-center px-6 py-3 border-b border-[#23242b] tab-glow">
+                <i class="fa-solid fa-file-code text-[#9cdcfe] mr-3"></i>
+                <span class="text-gray-100 font-mono code-font text-base"">guiihxyz.settings.json</span>
+            </div>
+            <!-- Editor -->
+            <div class="flex-1 bg-[#111216] p-0 overflow-auto">
+                <!-- Monaco Editor em modo somente leitura -->
+                <div id="monaco" class="h-full w-full" style="height:100%; min-height:400px;"></div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-[#181a20] text-gray-500 text-xs px-6 py-3 flex justify-between border-t border-[#23242b]">
+        <a href="https://github.com/guiihxyz" class="tracking-wide">github.com/guiihxyz</a>
+        <span class="text-[#9cdcfe]">Minhas configurações - VSCode</span>
+    </footer>
+
+    <!-- Monaco Editor -->
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
+    <script src="https://unpkg.com/monaco-themes/dist/monaco-themes.js"></script>
+</script>
+<script>
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs' }})
+    require(['vs/editor/editor.main'], function () {
+        fetch('src/settings.json')
+        .then(res => res.text())
+        .then(jsonText => {
+            fetch('https://unpkg.com/monaco-themes/themes/Dracula.json')
+            .then(res => res.json())
+            .then(data => {
+                monaco.editor.defineTheme('dracula', data);
+                monaco.editor.create(document.getElementById('monaco'), {
+                    value: jsonText,
+                    language: 'json',
+                    theme: 'dracula',
+                    fontFamily: 'JetBrains Mono, monospace',
+                    fontSize: 18,
+                    readOnly: true,
+                    minimap: { enabled: false },
+                    lineNumbers: "on",
+                    scrollBeyondLastLine: false,
+                    renderLineHighlight: "all",
+                    roundedSelection: false,
+                    scrollbar: {
+                        vertical: 'auto',
+                        horizontal: 'auto'
+                    }
+                })
+            })
+        })
+    })
+</script>
+</script>
+</body>
+</html>

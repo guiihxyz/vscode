@@ -1,0 +1,63 @@
+{
+    "workbench.iconTheme": "symbols",
+    "workbench.colorTheme": "SynthWave '84",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 20,
+    "editor.lineHeight": 1.8,
+    "editor.wordWrap": "on",
+    "workbench.startupEditor": "none",
+    "editor.renderLineHighlight": "none",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.statusBar.visible": false,
+    "files.autoSave": "afterDelay",
+    "apc.font.family": "Inter",
+    "apc.stylesheet": {
+        ".title-label > h2": "display: none",
+        ".editor-actions": "display: none",
+    },
+    "workbench.tips.enabled": false,
+    "workbench.tree.indent": 14,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.decorations.enabled": false,
+    "window.customTitleBarVisibility": "never",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "editor.stickyScroll.enabled": false,
+    "editor.colorDecorators": false,
+    "editor.codeLens": false,
+    "editor.lightbulb.enabled": "off",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "scm.diffDecorations": "none",
+    "editor.detectIndentation": false,
+    "editor.guides.indentation": false,
+    "editor.renderWhitespace": "none",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": false,
+    "editor.tabCompletion": "on",
+    "emmet.triggerExpansionOnTab": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "explorer.confirmPasteNative": false,
+}
