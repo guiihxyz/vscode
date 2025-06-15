@@ -2,7 +2,7 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 20,
+    "editor.fontSize": 17,
     "editor.lineHeight": 1.8,
     "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
@@ -21,7 +21,6 @@
         ".editor-actions": "display: none"
     },
     "workbench.tips.enabled": false,
-    "workbench.tree.indent": 14,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "git.decorations.enabled": false,
@@ -119,9 +118,22 @@
         "gleam": "gleam run -m $fileNameWithoutExt"
     },
     "code-runner.runInTerminal": true,
-    "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Bearded Theme feat. Melle Julie",
+    "workbench.colorTheme": "Constatic",
     "breadcrumbs.enabled": false,
     "explorer.compactFolders": false,
     //   "editor.formatOnSave": true,
+    "intelephense.diagnostics.undefinedMethod": false,
+    "intelephense.diagnostics.undefinedFunction": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.indent": 12,
+    "workbench.iconTheme": "material-icon-theme",
 }
