@@ -2,9 +2,11 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 18,
+    "editor.fontSize": 17,
     "editor.lineHeight": 1.8,
     "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
     "workbench.startupEditor": "none",
     "editor.renderLineHighlight": "none",
     "editor.fontLigatures": "'calt', 'ss01'",
@@ -162,5 +164,5 @@
     },
     "window.menuBarVisibility": "compact",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Omni"
+    "workbench.colorTheme": "Min Dark"
 }
