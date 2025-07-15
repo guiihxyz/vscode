@@ -1,0 +1,11 @@
+.monaco-workbench,
+.sidebar,
+.title,
+.activitybar,
+.statusbar,
+.tabs-container,
+.monaco-list,
+.monaco-menu,
+.explorer-folders-view {
+  font-family: 'Inter', sans-serif !important;
+}
