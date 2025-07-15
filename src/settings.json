@@ -163,6 +163,6 @@
   "editor.inlayHints.enabled": "on",
   "tailwindCSS.experimental.configFile": "frontend/src/styles.css",
   "vscode_custom_css.imports": [
-    "file:///C:/Users/guiihxyz/Documents/Work/custom.css"
+    "file:///C:/Users/your/custom/css/custom.css"
   ]
 }
