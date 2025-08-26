@@ -1,22 +1,24 @@
 {
+  "editor.fontFamily": "Geist Mono",
+  "editor.fontSize": 16,
+  "workbench.iconTheme": "symbols",
+  "files.autoSave": "afterDelay",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 19,
-  "editor.lineHeight": 1.8,
+  "chat.commandCenter.enabled": false,
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
+  "editor.lineHeight": 1.8,
+  "workbench.editor.showTabs": "single",
+  "breadcrumbs.enabled": false,
   "workbench.startupEditor": "none",
-  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "gutter",
   "editor.fontLigatures": "'calt', 'ss01'",
   "workbench.editor.labelFormat": "short",
-  "editor.semanticHighlighting.enabled": false,
-  "workbench.activityBar.location": "hidden",
+  "editor.semanticHighlighting.enabled": true, // cores
   "editor.minimap.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
-  "workbench.statusBar.visible": false,
-  "files.autoSave": "afterDelay",
   "workbench.tips.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -33,6 +35,7 @@
       }
     ]
   },
+  "symbols.hidesExplorerArrows": false,
   "editor.stickyScroll.enabled": false,
   "editor.colorDecorators": true,
   "editor.codeLens": false,
@@ -71,7 +74,7 @@
     "bat": "cmd /c",
     "shellscript": "bash",
     "fsharp": "fsi",
-    "csharp": "scriptcs",
+    "csharp": "dotnet run",
     "vbscript": "cscript //Nologo",
     "typescript": "ts-node",
     "coffeescript": "coffee",
@@ -112,20 +115,17 @@
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
   "code-runner.runInTerminal": true,
-  "breadcrumbs.enabled": false,
   "explorer.compactFolders": false,
-  "liveServer.settings.donotShowInfoMsg": true,
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "typescript": false
   },
-  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.tree.indent": 12,
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.renderIndentGuides": "none",
-  "workbench.tree.indent": 14,
-  "symbols.hidesExplorerArrows": true,
+  "workbench.tree.renderIndentGuides": "always",
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -133,6 +133,12 @@
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    ".sqlite": "${capture}.${extname}-",
+    ".db": "${capture}.${extname}-",
+    ".sqlite3": "${capture}.${extname}-",
+    ".db3": "${capture}.${extname}-",
+    ".sdb": "${capture}.${extname}-",
+    ".s3db": "${capture}.${extname}-",
     "*.sqlite": "${capture}.${extname}-*",
     "*.db": "${capture}.${extname}-*",
     "*.sqlite3": "${capture}.${extname}-*",
@@ -145,24 +151,16 @@
     "source.fixAll.eslint": "explicit",
     "source.addMissingImports.ts": "explicit"
   },
-  "eslint.validate": ["javascript", "javascriptreact", "graphql"],
   "editor.formatOnSave": true,
-  "remote.SSH.remotePlatform": {
-    "albania.cloud": "linux",
-    "italia.cloud": "linux"
-  },
-  "window.menuBarVisibility": "hidden",
-  "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Tokyo Night",
-  "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "markdown",
-    "HTML (EEx)",
-    "HTML (Eex)"
-  ],
   "editor.inlayHints.enabled": "on",
-  "tailwindCSS.experimental.configFile": "frontend/src/styles.css",
-  "vscode_custom_css.imports": [
-    "file:///C:/Users/your/custom/css/custom.css"
-  ]
+  // "tailwindCSS.experimental.configFile": "frontend/src/styles.css",
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "css.validate": false,
+  "database-client.autoSync": true,
+  "python.createEnvironment.trigger": "off",
+  "terminal.integrated.suggest.enabled": true,
+  "workbench.colorTheme": "Min Dark",
+  "terminal.integrated.env.windows": {},
+  "console-ninja.featureSet": "Community"
 }
