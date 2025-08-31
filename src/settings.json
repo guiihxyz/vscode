@@ -1,7 +1,6 @@
 {
   "editor.fontFamily": "Geist Mono",
   "editor.fontSize": 16,
-  "workbench.iconTheme": "symbols",
   "files.autoSave": "afterDelay",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
@@ -149,7 +148,8 @@
   "excalidraw.theme": "dark",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.addMissingImports.ts": "explicit"
+    "source.addMissingImports.ts": "explicit",
+    "source.organizeImports": "explicit",
   },
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "on",
@@ -162,5 +162,11 @@
   "terminal.integrated.suggest.enabled": true,
   "workbench.colorTheme": "Min Dark",
   "terminal.integrated.env.windows": {},
-  "console-ninja.featureSet": "Community"
+  "console-ninja.featureSet": "Community",
+  "codeium.enableConfig": {
+    "*": true,
+    "properties": true,
+    "prisma": true
+  },
+  "workbench.iconTheme": "symbols"
 }
