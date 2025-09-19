@@ -135,5 +135,12 @@
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.endOfLine": "lf",
   "prettier.embeddedLanguageFormatting": "auto",
-  "workbench.iconTheme": "symbols"
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "workbench.iconTheme": "symbols",
+  "workbench.activityBar.location": "hidden",
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/guiihxyz/Documents/vscode/custom.css"
+  ]
 }
