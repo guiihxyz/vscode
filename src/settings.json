@@ -6,7 +6,6 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 17,
   "editor.wordWrap": "on",
-  "workbench.iconTheme": "symbols",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.lineHeight": 1.8,
@@ -36,15 +35,6 @@
       }
     ]
   },
-  "symbols.hidesExplorerArrows": false,
-  "symbols.files.associations": {
-    "*.module.ts": "nest",
-    "*.service.ts": "nest",
-    "*.controller.ts": "nest",
-    "*.dto.ts": "nest",
-    "*.guard.ts": "nest"
-  },
-  "material-icon-theme.activeIconPack": "nest",
   "editor.stickyScroll.enabled": false,
   "editor.colorDecorators": true,
   "editor.codeLens": false,
@@ -64,9 +54,18 @@
   "explorer.confirmPasteNative": false,
   "explorer.fileNesting.enabled": false,
   "explorer.compactFolders": false,
-  "workbench.tree.indent": 12,
+  "workbench.tree.indent": 14,
   "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.renderIndentGuides": "none",
+  "symbols.hidesExplorerArrows": true,
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.service.ts": "nest",
+    "*.controller.ts": "nest",
+    "*.dto.ts": "nest",
+    "*.guard.ts": "nest"
+  },
+  "material-icon-theme.activeIconPack": "nest",
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -136,4 +135,5 @@
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.endOfLine": "lf",
   "prettier.embeddedLanguageFormatting": "auto",
+  "workbench.iconTheme": "symbols"
 }
